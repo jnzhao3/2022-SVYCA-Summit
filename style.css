@@ -1,5 +1,5 @@
 html {
-    font-family: "Roboto";
+    font-family: "Open Sans","Roboto";
     font-size: 20px;
     font-weight: 400;
     line-height: 1.6;
@@ -20,7 +20,7 @@ main {
 
 section {
     box-sizing: border-box;
-    padding: 0 15vw 0 15vw;
+    padding: 20vh 16vw 20vh 16vw;
     width: 100vw;
     height: -webkit-fill-available;
     min-height: 100vh;
@@ -35,18 +35,23 @@ section {
 }
 
 #title-section, #speakers-section, #links-section {
+    /* background-image: linear-gradient(to bottom right, rgb(169, 243, 133), rgb(50, 218, 204));
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-image: linear-gradient(to bottom right, rgb(169, 243, 133), rgb(50, 218, 204));
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 12s ease infinite;
+	background: linear-gradient(-45deg, #d48438, #d1bf49,#42bc6d, #398cd0);
+	background-size: 300% 300%;
+	animation: gradient 20s ease infinite;
 	/* height: 100vh; */
     color: white;
 }
 
-/* #title-section {
-    position: sticky;
-    top: 0;
-} */
+#title-section {
+    /* position: sticky; */
+    /* top: 0; */
+    padding: 0vh 16vw 10vh 16vw;
+    /* background-image: url("img/half.png"); */
+    /* background-image: url(black.jpeg); */
+}
 
 @keyframes gradient {
 	0% {
@@ -80,15 +85,16 @@ section {
 
 h1 {
     font-size: 45px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Montserrat",Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
 }
 
 .page-title {
-    font-size: 75px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+    font-family: "Montserrat", Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-weight: 800;
+    line-height: normal;
 }
 
 @media screen and (max-width: 1200px) {
@@ -104,6 +110,8 @@ h2 {
 .information {
     font-size: 25px;
     text-align: center;
+    position: relative;
+    z-index: 5;
 }
 
 .reveal {
@@ -133,6 +141,8 @@ button {
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 45px;
+    z-index: 5;
+    position: relative;
 }
 button a {
     font-weight: normal;
@@ -150,7 +160,7 @@ button:hover {
 }
 
 section div {
-    padding: 15px;
+    padding: 25px;
     margin: 0;
     /* position: absolute; */
     /* top: 50%; */
@@ -159,6 +169,13 @@ section div {
     vertical-align: middle;
     /* transform: translate(-50%, -50%); */
 }
+
+/* #about-section {
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    object-fit: contain;
+} */
 
 .images-div {
     display: flex;
@@ -173,9 +190,10 @@ section div {
 
 .images-div img {
     max-height: 275px;
-    max-width: 70vw;
+    max-width: 55vw;
     /* display: inline-block; */
-    padding: 6px;
+    padding: 0px;
+    margin: 1px;
     /* display:inline-block;
     margin-left:auto;
     margin-right:auto; */
@@ -237,7 +255,7 @@ section div {
     left: 50%;
     transform: translate(-50%, -50%);
     filter:brightness(0) invert(1);
-    /* z-index: 0; */
+    /* z-index: -5; */
     opacity: 7%;
 }
 /* #bg-image-div {
