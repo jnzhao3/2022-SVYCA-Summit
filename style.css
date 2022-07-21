@@ -38,7 +38,7 @@ section {
     /* background-image: linear-gradient(to bottom right, rgb(169, 243, 133), rgb(50, 218, 204));
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-image: linear-gradient(to bottom right, rgb(169, 243, 133), rgb(50, 218, 204));
-	background: linear-gradient(-45deg, #d48438, #d1bf49,#42bc6d, #398cd0);
+	background: linear-gradient(-45deg, #f5822b, #e7c749,#42bc6d, #398cd0);
 	background-size: 300% 300%;
 	animation: gradient 20s ease infinite;
 	/* height: 100vh; */
@@ -105,6 +105,7 @@ h1 {
 
 h2 {
     font-size: 25px;
+    font-family: "Montserrat";
 }
 
 .information {
@@ -177,10 +178,10 @@ section div {
     object-fit: contain;
 } */
 
-.images-div {
+.images-div, .logos-div {
     display: flex;
     /* margin: auto; */
-    /* padding: 10%; */
+    padding: 0;
     /* align-items: center; */
     justify-content: center;
     /* text-align: center; */
@@ -197,6 +198,13 @@ section div {
     /* display:inline-block;
     margin-left:auto;
     margin-right:auto; */
+}
+
+.logos-div img {
+    max-height: 15vh;
+    max-width: 15vw;
+    padding:0;
+    margin:0;
 }
 
 /* header {
@@ -262,6 +270,15 @@ section div {
     height: 100%;
     width: 100%;
 } */
+#links-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0;
+}
+#links-div button {
+    margin: 5px;
+}
 
 footer {
     /* background-color: rgb(51, 52, 54); */
