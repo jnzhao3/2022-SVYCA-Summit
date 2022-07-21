@@ -1,11 +1,15 @@
 html {
-    font-family: "Open Sans","Roboto";
+    font-family: "Roboto";
     font-size: 20px;
     font-weight: 400;
     line-height: 1.6;
     color: rgb(51, 52, 54);
     /* margin: 2vw; */
     /* background-size: 100vw; */
+}
+
+::selection {
+    background-color: #42bc6d;
 }
 
 body, main, footer, header {
@@ -38,7 +42,7 @@ section {
     /* background-image: linear-gradient(to bottom right, rgb(169, 243, 133), rgb(50, 218, 204));
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-image: linear-gradient(to bottom right, rgb(169, 243, 133), rgb(50, 218, 204));
-	background: linear-gradient(-45deg, #f5822b, #e7c749,#42bc6d, #398cd0);
+	background: linear-gradient(-45deg, #f5822b, #d0b23b,#42bc6d, #398cd0);
 	background-size: 300% 300%;
 	animation: gradient 20s ease infinite;
 	/* height: 100vh; */
@@ -48,7 +52,7 @@ section {
 #title-section {
     /* position: sticky; */
     /* top: 0; */
-    padding: 0vh 16vw 10vh 16vw;
+    padding: 0vh 5vw 10vh 5vw;
     /* background-image: url("img/half.png"); */
     /* background-image: url(black.jpeg); */
 }
@@ -95,6 +99,7 @@ h1 {
     text-align: center;
     font-weight: 800;
     line-height: normal;
+    margin: 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -113,6 +118,7 @@ h2 {
     text-align: center;
     position: relative;
     z-index: 5;
+    /* max-width: 50vw; */
 }
 
 .reveal {
@@ -264,7 +270,7 @@ section div {
     transform: translate(-50%, -50%);
     filter:brightness(0) invert(1);
     /* z-index: -5; */
-    opacity: 7%;
+    opacity: 10%;
 }
 /* #bg-image-div {
     height: 100%;
