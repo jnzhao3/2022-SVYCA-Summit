@@ -183,6 +183,7 @@ a:hover {
 button {
     color: white;
     margin: auto;
+    margin-bottom: 15px;
     padding: 15px;
     display: block;
     border: 2.5px solid white;
