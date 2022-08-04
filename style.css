@@ -334,7 +334,7 @@ img {
 #links-div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     margin: 0;
 }
 #links-div button {
