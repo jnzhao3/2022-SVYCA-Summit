@@ -199,14 +199,14 @@ button a {
     user-select:none;
 }
 
-button a:hover {
-    text-decoration: none;
-
-}
 button:hover {
     background-color: white;
     color: rgb(51, 52, 54);
     transition: 1s all ease;
+}
+
+button a:hover {
+    text-decoration: none;
 }
 
 section div {
@@ -255,6 +255,7 @@ section div {
     min-width: 120px;
     padding:0;
     margin:0;
+    object-fit: contain;
 }
 
 /* header {
